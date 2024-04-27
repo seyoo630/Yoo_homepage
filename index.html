@@ -1,9 +1,64 @@
-<html>
-<head></head>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoo's</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    <h1>
-       Hello world!
-    </h1>
+    <header>
+        <div class="container">
+            <!-- My Blog 제목을 위로 이동 -->
+            <h1>Yoo's</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <!-- 검색 폼을 오른쪽에 추가 -->
+            <form id="search-form" class="search-form-right">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+    
+
+    <main>
+        <!-- 갤러리 내용을 여기에 추가 -->
+        <!-- 각 포스트에 좋아요 및 공유 버튼 추가 -->
+        <div class="post">
+            <h3>OpenSource SW</h3>
+            <p>Git과 Github, 웹 호스팅에 관한 내용들</p>
+            <div class="post-interaction">
+                <button class="like-btn">Like</button>
+                <span class="like-count">0</span> <!-- 좋아요 카운트 표시 -->
+                <button class="share-btn">Share</button>
+            </div>
+        </div>
+
+        <div class="post">
+            <h3>Computer Network</h3>
+            <p>네트워크의 기본적인 용어정리, OSI 7계층에 대한 내용들</p>
+            <div class="post-interaction">
+                <button class="like-btn">Like</button>
+                <span class="like-count">0</span> <!-- 좋아요 카운트 표시 -->
+                <button class="share-btn">Share</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Yoo's Blog</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> <!-- JavaScript 파일 추가 -->
 </body>
 </html>
