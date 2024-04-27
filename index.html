@@ -16,32 +16,23 @@
                     <li><a href="#">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="gallery.html">Gallery</a></li> <!-- 갤러리 페이지로 이동하는 링크 -->
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <div class="container">
-            <section>
-                <h2>Welcome to My Blog</h2>
-                <p>This is a place where I share my thoughts and ideas.</p>
-            </section>
-
-            <section>
-                <h2>Latest Posts</h2>
-                <div class="post">
-                    <h3><a href="post1.html">Post Title 1</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="post1.html">Read more</a>
-                </div>
-                <div class="post">
-                    <h3><a href="post2.html">Post Title 2</a></h3>
-                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="post2.html">Read more</a>
-                </div>
-            </section>
+        <!-- 갤러리 내용을 여기에 추가 -->
+        <!-- 각 포스트에 좋아요 및 공유 버튼 추가 -->
+        <div class="post">
+            <h3>Post Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="post-interaction">
+                <button class="like-btn">Like</button>
+                <span class="like-count">0</span> <!-- 좋아요 카운트 표시 -->
+                <button class="share-btn">Share</button>
+            </div>
         </div>
     </main>
 
@@ -50,5 +41,7 @@
             <p>&copy; 2024 My Blog</p>
         </div>
     </footer>
+
+    <script src="script.js"></script> <!-- JavaScript 파일 추가 -->
 </body>
 </html>
