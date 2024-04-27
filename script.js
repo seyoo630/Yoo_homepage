@@ -31,3 +31,24 @@ document.querySelectorAll('.post').forEach(post => {
         alert('Post URL copied to clipboard.');
     });
 });
+
+// 검색 기능 구현
+const searchForm = document.getElementById('search-form');
+const searchInput = document.getElementById('search-input');
+
+searchForm.addEventListener('submit', function (event) {
+    event.preventDefault(); // 기본 이벤트(페이지 새로고침) 방지
+
+    const searchTerm = searchInput.value.toLowerCase(); // 검색어를 소문자로 변환
+
+    // 각 포스트의 제목을 검색어와 비교하여 일치하는 포스트를 보여줌
+    document.querySelectorAll('.post').forEach(post => {
+        const title = post.querySelector('h3').textContent.toLowerCase(); // 포스트 제목을 소문자로 변환
+
+        if (title.includes(searchTerm)) {
+            post.style.display = 'block'; // 검색어가 포함된 포스트는 보여줌
+        } else {
+            post.style.display = 'none'; // 검색어가 포함되지 않은 포스트는 숨김
+        }
+    });
+});

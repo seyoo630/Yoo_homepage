@@ -96,3 +96,29 @@ footer {
 .share-btn:hover {
     background-color: #2980b9;
 }
+
+.search-form-right {
+    text-align: right;
+}
+
+/* 네비게이션 바와 검색 폼을 일렬로 배치하기 위한 스타일 추가 */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+#search-form {
+    display: flex; /* 검색 폼을 플렉스 박스로 설정하여 내부 요소를 정렬 */
+    align-items: center; /* 내부 요소를 수직 정렬 */
+}
